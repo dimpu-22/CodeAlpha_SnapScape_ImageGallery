@@ -1,0 +1,51 @@
+/* Fade Animation */
+
+.card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+/* Button Hover */
+
+.filters button,
+.all-btn,
+.theme-btn{
+
+transition:.35s;
+
+}
+
+.filters button:hover,
+.all-btn:hover,
+.theme-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* Logo */
+
+.logo{
+
+transition:.3s;
+
+}
+
+.logo:hover{
+
+transform:scale(1.05);
+
+}

@@ -1,0 +1,528 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Outfit',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#F6F4FF;
+
+    color:#252535;
+
+}
+
+/*==========================
+      NAVBAR
+===========================*/
+
+.navbar{
+
+    width:100%;
+
+    height:80px;
+
+    background:#ffffff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 70px;
+
+    box-shadow:0 8px 25px rgba(124,92,252,.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#7C5CFC;
+
+}
+
+.logo i{
+
+    font-size:32px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#444;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#7C5CFC;
+
+}
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.search-box{
+
+    background:#F3F1FF;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 20px;
+
+    border-radius:40px;
+
+}
+
+.search-box input{
+
+    border:none;
+
+    background:transparent;
+
+    outline:none;
+
+    width:180px;
+
+    font-size:15px;
+
+}
+
+.theme-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:#ffffff;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.profile{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+/*======================
+ HERO
+=======================*/
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px 40px;
+
+}
+
+.hero h1{
+
+    font-size:65px;
+
+    font-weight:800;
+
+    line-height:80px;
+
+}
+
+.hero span{
+
+    color:#7C5CFC;
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    color:#666;
+
+    font-size:20px;
+
+}
+
+/*======================
+ FILTERS
+=======================*/
+
+.filters{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:40px 0;
+
+}
+
+.filters button{
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    background:#ffffff;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    box-shadow:0 5px 15px rgba(124,92,252,.08);
+
+    transition:.35s;
+
+}
+
+.filters button:hover{
+
+    background:#7C5CFC;
+
+    color:white;
+
+}
+
+/*=====================
+ SIDEBAR
+======================*/
+
+.sidebar{
+
+    position:fixed;
+
+    left:30px;
+
+    top:130px;
+
+    width:250px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    box-shadow:0 10px 35px rgba(124,92,252,.08);
+
+}
+
+.all-btn{
+
+    width:100%;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:18px;
+
+    background:#7C5CFC;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    margin-bottom:25px;
+
+}
+
+.sidebar h3{
+
+    margin-bottom:20px;
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    padding:15px 0;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar li:hover{
+
+    color:#7C5CFC;
+
+    transform:translateX(10px);
+
+}
+
+/*=========================
+ GALLERY
+==========================*/
+
+.gallery{
+    width: calc(100% - 340px);
+    margin-left: 300px;
+    padding: 20px 35px 60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:28px;
+}
+
+/*=========================
+ CARD
+==========================*/
+
+.card{
+    position:relative;
+    overflow:hidden;
+    border-radius:24px;
+    background:#ffffff;
+    box-shadow:0 18px 40px rgba(124,92,252,.12);
+    cursor:pointer;
+    transition:.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 50px rgba(124,92,252,.18);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+/*=========================
+ CATEGORY BADGE
+==========================*/
+
+.badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+    background:#7C5CFC;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    z-index:2;
+}
+
+/*=========================
+ CARD ICONS
+==========================*/
+
+.card-icons{
+    position:absolute;
+    top:18px;
+    right:18px;
+    display:flex;
+    gap:10px;
+    z-index:2;
+}
+
+.card-icons i{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(12px);
+    color:#fff;
+    font-size:16px;
+    transition:.35s;
+}
+
+.card-icons i:hover{
+    background:#7C5CFC;
+    transform:scale(1.12);
+}
+
+/*=========================
+ IMAGE OVERLAY
+==========================*/
+
+.overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:22px;
+    color:#fff;
+    background:linear-gradient(to top,
+    rgba(0,0,0,.82),
+    rgba(0,0,0,.35),
+    transparent);
+}
+
+.overlay h3{
+    font-size:22px;
+    margin-bottom:6px;
+    font-weight:700;
+}
+
+.overlay p{
+    font-size:15px;
+    opacity:.95;
+}
+
+.filter-btn.active{
+    background:#7C5CFC;
+    color:#fff;
+}
+
+.filter-btn{
+    transition:.3s ease;
+}
+
+
+
+/*=========================
+LIGHTBOX
+==========================*/
+
+.lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.lightbox img{
+    max-width:85%;
+    max-height:85%;
+    border-radius:18px;
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.lightbox.active{
+    display:flex;
+}
+
+.close-btn{
+    position:absolute;
+    top:25px;
+    right:35px;
+    color:#fff;
+    font-size:40px;
+    cursor:pointer;
+}
+
+.prev-btn,
+.next-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:#7C5CFC;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.prev-btn{
+    left:40px;
+}
+
+.next-btn{
+    right:40px;
+}
+
+.prev-btn:hover,
+.next-btn:hover{
+    background:#5b3ee8;
+}
